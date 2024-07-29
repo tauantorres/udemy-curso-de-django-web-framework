@@ -9,10 +9,11 @@ def home(request) -> HttpResponse:
     return render(
         request=request, 
         template_name='recipes/pages/home.html',
-        context={
-            'name': 'Tauan Torres Mendes',
-            'age': 28,
-            'country': 'Brazil',
-            }
-        )
+    )
+
+def recipe(request, id) -> HttpResponse:
+    return render(
+        request=request, 
+        template_name='recipes/pages/home.html',
+    )
 
